@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--
+  This is an HTML comment. HTML is the "skeleton" of the page.
+  Think of it like this:
+    - HTML = structure (what's on the page)
+    - CSS  = styling (how it looks)
+    - JS   = behavior (what it does when clicked, scrolled, etc.)
+-->
+<html lang="en">
+<head>
+  <!-- <head> holds metadata the browser needs but users don't see -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mbevisuals | 3D Animation & Scientific Visualization</title>
+
+  <!-- Meta tags that show up when you share the link on social media -->
+  <meta name="description" content="3D animation and scientific visualization by mbevisuals. Commercial and scientific 3D visuals." />
+
+  <!-- Link to the external CSS file (the styling) -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- A clean font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Kaisei+Tokumin:wght@400;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ============ NAVIGATION BAR ============ -->
+  <nav class="nav">
+    <a href="#home" class="nav-logo">MBEVISUALS</a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ HERO (the big top section) ============ -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">3D Animation · Scientific Visualization</p>
+      <h1>Modern Storytelling.<br><span class="accent">Cinematic visuals for science and business.</span></h1>
+      <p class="subhead">
+        I create 3D animations for science communication and commercial brands,
+        from molecular mechanisms to product launches.
+      </p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">View work</a>
+        <a href="#contact" class="btn btn-ghost">Start a project</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ WORK / PROJECTS GRID ============ -->
+  <section id="work" class="section">
+    <div class="section-header">
+      <h2>Selected work</h2>
+      <p>A few recent projects across science and commercial.</p>
+    </div>
+
+    <!--
+      Each "project-card" below is one showcase tile.
+      Replace the placeholder image URLs with your own renders or videos later.
+      To use a local file: src="images/your-render.jpg"
+    -->
+    <div class="grid">
+      <article class="project-card" data-title="Cellsius" data-tag="Commercial" data-video="https://youtu.be/Dcd1IDF9c3M" data-overview="" data-usecase="" data-client="">
+        <div class="project-media">
+          <img src="images/Cellsius.png" alt="Cellsius" />
+        </div>
+        <div class="project-info">
+          <span class="tag">Commercial</span>
+          <h3>Cellsius</h3>
+        </div>
+      </article>
+
+      <article class="project-card" data-title="Quantum Swap Gates" data-tag="Scientific" data-video="" data-overview="" data-usecase="" data-client="">
+        <div class="project-media">
+          <img src="images/Quantum%20Swap%20Gates.png" alt="Quantum Swap Gates" />
+        </div>
+        <div class="project-info">
+          <span class="tag">Scientific</span>
+          <h3>Quantum Swap Gates</h3>
+        </div>
+      </article>
+
+      <article class="project-card" data-title="bottleplus" data-tag="Commercial" data-video="https://youtu.be/qPd4FL6xpWI" data-overview="This animation was made to illustrate the sparkbottle in a visually engaging way, while showcasing its key features and demonstrating how it should be used." data-usecase="This animation was used as an Instagram Reel that generated > 57'000 views and featured on the bottleplus website." data-client="bottleplus" data-links="bottleplus website::https://bottleplus.com||Instagram Reel::https://www.instagram.com/reel/DEAtC_VxbXy/?igsh=ZThhMnEzaXRrN2dw">
+        <div class="project-media">
+          <img src="images/Bottleplus.png" alt="bottleplus" />
+        </div>
+        <div class="project-info">
+          <span class="tag">Commercial</span>
+          <h3>bottleplus</h3>
+        </div>
+      </article>
+
+      <article class="project-card" data-title="Quantum Tunneling" data-tag="Scientific" data-video="https://youtu.be/AI1DpERE-lo" data-overview="" data-usecase="" data-client="">
+        <div class="project-media">
+          <img src="images/Quantum%20Tunneling.png" alt="Quantum Tunneling" />
+        </div>
+        <div class="project-info">
+          <span class="tag">Scientific</span>
+          <h3>Quantum Tunneling</h3>
+        </div>
+      </article>
+
+      <article class="project-card extra-card" data-title="Superfluid Phenomena" data-tag="Scientific" data-video="https://youtu.be/YZoVGdMBI_s" data-overview="In a fermionic superfluid, atoms move as pairs. A directed current through a tight channel is observed despite a chemical potential difference that's smaller than the pairing gap." data-usecase="Illustration for lectures and power point presentations. Featured in articles on the websites of ETH Zürich Physics-Department and the MaNep Network." data-client="Prof. Dr. Tilman Esslinger D-PHYS ETH Zürich" data-links="D-PHYS ETH::https://www.phys.ethz.ch/de/news-und-veranstaltungen/d-phys-news/2024/04/superfluide-ueberraschung.html||MaNep Network::https://manep.ch/news/discoveries-innovation/surprises-in-entropy-transport-between-ballistically-coupled-fermionic-superfluids/">
+        <div class="project-media">
+          <img src="images/Superfluid%20Phenomena.png" alt="Superfluid Phenomena" />
+        </div>
+        <div class="project-info">
+          <span class="tag">Scientific</span>
+          <h3>Superfluid Phenomena</h3>
+        </div>
+      </article>
+
+      <article class="project-card extra-card" data-title="Optical Lattice" data-tag="Scientific" data-video="https://youtu.be/btYRcOwTALM" data-overview="Ultracold atoms trapped in the lattice structure created by criss-crossing laser beams." data-usecase="Illustration for lectures and power point presentations. Featured in an article on the websites of ETH Zürich Physics-Department." data-client="Prof. Dr. Tilman Esslinger D-PHYS ETH Zürich" data-links="D-PHYS ETH::https://www.phys.ethz.ch/news-and-events/d-phys-news/2025/06/how-to-raise-a-quantum-fermi-gas-experiment.html">
+        <div class="project-media">
+          <img src="images/Optical%20Lattice.png" alt="Optical Lattice" />
+        </div>
+        <div class="project-info">
+          <span class="tag">Scientific</span>
+          <h3>Optical Lattice</h3>
+        </div>
+      </article>
+
+      <article class="project-card extra-card" data-title="Intertwined Entanglement" data-tag="Scientific" data-video="https://youtu.be/IPewBgNUlvw" data-overview="Two pairs of quantum entangled atoms are transported in a topological pump, passing through each other with quantum swap gates." data-usecase="Illustration for lectures and power point presentations." data-client="Prof. Dr. Tilman Esslinger D-PHYS ETH Zürich">
+        <div class="project-media">
+          <img src="images/Intertwined%20Entanglement.png" alt="Intertwined Entanglement" />
+        </div>
+        <div class="project-info">
+          <span class="tag">Scientific</span>
+          <h3>Intertwined Entanglement</h3>
+        </div>
+      </article>
+
+      <article class="project-card extra-card" data-title="Shuttling Quantum Information" data-tag="Scientific" data-video="" data-overview="Vision for a future Quantum Computer in which the atomic qubits are shuttled around in an optical lattice created by interfering laser beams." data-usecase="Illustration for lectures and power point presentations." data-client="Prof. Dr. Tilman Esslinger D-PHYS ETH Zürich">
+        <div class="project-media">
+          <img src="gifs/Quantum%20Shuttling.gif" alt="Shuttling Quantum Information" />
+        </div>
+        <div class="project-info">
+          <span class="tag">Scientific</span>
+          <h3>Shuttling Quantum Information</h3>
+        </div>
+      </article>
+
+      <article class="project-card extra-card" data-title="Mohs Surgery" data-tag="Scientific" data-video="https://youtu.be/uSIRBmqMJdY" data-overview="The videos illustrate how the surgically removed tumors, along with the small safety margin of healthy skin, are cut into wafer-thin slices, stained, and examined under the microscope." data-usecase="Used to explain the procedure in discussions with patients. Used as information of the procedure, accessible on the Website of the University Hospital Zürich." data-client="Prof. Dr. med. Jürg Hafner Universitätsspital Zürich" data-links="Universitätsspital Zürich::https://www.usz.ch/fachbereich/dermatologie/angebot/mohs-chirurgie/#erklaervideos">
+        <div class="project-media">
+          <img src="images/Mohs%20Surgery.png" alt="Mohs Surgery" />
+        </div>
+        <div class="project-info">
+          <span class="tag">Scientific</span>
+          <h3>Mohs Surgery</h3>
+        </div>
+      </article>
+    </div>
+
+    <div class="view-more-wrap">
+      <button id="view-more-btn">View more <span class="chevron">&#8964;</span></button>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section section-alt">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>About</h2>
+        <p>
+          Hi! I'm passionate about turning science and tech into compelling visuals.
+          I love talking to researchers, diving into their ideas, and turning those into
+          animations that both look great and stay true to the science.
+        </p>
+        <p>
+          My engineering studies help me ask the right questions and understand the logic
+          behind the process, which makes the creative part all the more exciting.
+        </p>
+        <p>
+          If you have something you'd like visualized, whether it's a complex process,
+          an innovative product, or a research idea, I'd love to hear from you.
+          Just reach out, and let's make something cool together.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section">
+    <div class="section-header">
+      <h2>Services</h2>
+      <p>What I can help you with.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service">
+        <h3>Scientific Rendering / Animation</h3>
+        <p>Molecular, cellular, and mechanical process visualization for papers, grants, and education.</p>
+      </div>
+      <div class="service">
+        <h3>Commercial 3D</h3>
+        <p>Product communication, brand content, and concept visualization.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIAL ============ -->
+  <section class="section section-alt">
+    <div class="testimonial-wrap">
+      <blockquote class="testimonial">
+        <p>"Working with Mika was an absolute pleasure. His communication was always clear, and the quality of the final results blew us away. I can wholeheartedly recommend Mika to anyone looking for high-end 3D work with a creative, reliable partner."</p>
+        <cite>
+          <strong>Mariana Bastos</strong>
+          <span>Co-Founder, bottleplus</span>
+        </cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section section-alt">
+    <div class="contact">
+      <h2>Let's make something!</h2>
+      <p>Have a project in mind? Send a brief message and I'll get back within 48 hours.</p>
+      <a href="mailto:mbe.visuals@gmail.com" class="btn btn-primary btn-large">mbe.visuals@gmail.com</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/mikablackmore-esslinger/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>© <span id="year"></span> mbevisuals — All rights reserved.</p>
+  </footer>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <div id="project-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close">&#x2715;</button>
+      <div class="modal-video-wrap">
+        <iframe id="modal-video" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <img id="modal-image" src="" alt="" />
+      </div>
+      <div class="modal-body">
+        <span class="tag" id="modal-tag"></span>
+        <h3 id="modal-title"></h3>
+        <div class="modal-fields">
+          <div class="modal-field" id="modal-overview-wrap">
+            <span class="modal-label">Overview</span>
+            <p id="modal-overview"></p>
+          </div>
+          <div class="modal-field" id="modal-usecase-wrap">
+            <span class="modal-label">Use Case</span>
+            <p id="modal-usecase"></p>
+          </div>
+          <div class="modal-field" id="modal-client-wrap">
+            <span class="modal-label">Client / Collaborator</span>
+            <p id="modal-client"></p>
+          </div>
+          <div class="modal-field" id="modal-links-wrap">
+            <span class="modal-label">Featured In</span>
+            <div id="modal-links"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to the JS file at the end (so the page loads first, then the script runs) -->
+  <script src="script.js"></script>
+</body>
+</html>
