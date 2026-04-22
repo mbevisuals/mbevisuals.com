@@ -15,7 +15,7 @@
   --bg-alt:    #111118;     /* alternating section background */
   --text:      #eceef2;     /* main text */
   --muted:     #9aa0ab;     /* secondary text */
-  --accent:    #7ab3f0;     /* your brand accent — change this one color to rebrand */
+  --accent:    #8bbfd8;     /* warm sky blue matching Cellsius animation */
   --border:    rgba(255,255,255,0.08);
   --max-width: 1200px;
   --radius:    14px;
@@ -88,8 +88,8 @@ a:hover { color: var(--accent); }
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at 20% 30%, rgba(122,179,240,0.12), transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(100,100,255,0.08), transparent 60%);
+    radial-gradient(circle at 20% 30%, rgba(139,191,216,0.15), transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(180,200,210,0.08), transparent 60%);
 }
 .hero-bg-gif {
   position: absolute;
@@ -98,7 +98,7 @@ a:hover { color: var(--accent); }
   height: 100%;
   object-fit: cover;
   object-position: center;
-  opacity: 0.35;
+  opacity: 0.2;
   z-index: 0;
 }
 .hero::after {
