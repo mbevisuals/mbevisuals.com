@@ -16,7 +16,12 @@
   <!-- Meta tags that show up when you share the link on social media -->
   <meta name="description" content="3D animation and scientific visualization by mbevisuals. Commercial and scientific 3D visuals." />
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) — only activates if user accepts cookies -->
+  <script>
+    if (localStorage.getItem('cookie_consent') !== 'accepted') {
+      window['ga-disable-G-VC5P16TZVZ'] = true;
+    }
+  </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VC5P16TZVZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -272,6 +277,15 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- ============ COOKIE BANNER ============ -->
+  <div id="cookie-banner" class="cookie-banner" aria-live="polite">
+    <p>This site uses cookies to understand how visitors interact with it.</p>
+    <div class="cookie-actions">
+      <button id="cookie-decline" class="btn btn-ghost">Decline</button>
+      <button id="cookie-accept" class="btn btn-primary">Accept</button>
     </div>
   </div>
 

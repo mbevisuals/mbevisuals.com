@@ -448,7 +448,35 @@ h1 {
 .socials { margin-top: 40px; display: flex; gap: 28px; justify-content: center; }
 .socials a { color: var(--muted); }
 
-/* ---- 13. Footer ---- */
+/* ---- 13. Cookie Banner ---- */
+.cookie-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 24px;
+  max-width: 680px;
+  width: calc(100% - 48px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  font-size: 14px;
+  color: var(--muted);
+}
+.cookie-banner.hidden { display: none; }
+.cookie-actions { display: flex; gap: 10px; flex-shrink: 0; }
+.cookie-actions .btn { padding: 8px 18px; font-size: 13px; }
+
+@media (max-width: 560px) {
+  .cookie-banner { flex-direction: column; gap: 14px; text-align: center; }
+}
+
+/* ---- 15. Footer ---- */
 .footer {
   padding: 30px 40px;
   text-align: center;

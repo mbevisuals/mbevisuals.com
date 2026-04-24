@@ -119,6 +119,28 @@ viewMoreBtn.addEventListener('click', () => {
     : 'View less <span class="chevron">&#8964;</span>';
 });
 
-// 4. Small nicety: log a friendly message in the browser console.
+// 5. Cookie consent banner
+const cookieBanner  = document.getElementById('cookie-banner');
+const cookieAccept  = document.getElementById('cookie-accept');
+const cookieDecline = document.getElementById('cookie-decline');
+
+if (localStorage.getItem('cookie_consent')) {
+  cookieBanner.classList.add('hidden');
+}
+
+cookieAccept.addEventListener('click', () => {
+  localStorage.setItem('cookie_consent', 'accepted');
+  window['ga-disable-G-VC5P16TZVZ'] = false;
+  gtag('config', 'G-VC5P16TZVZ');
+  cookieBanner.classList.add('hidden');
+});
+
+cookieDecline.addEventListener('click', () => {
+  localStorage.setItem('cookie_consent', 'declined');
+  window['ga-disable-G-VC5P16TZVZ'] = true;
+  cookieBanner.classList.add('hidden');
+});
+
+// 6. Small nicety: log a friendly message in the browser console.
 //    Open DevTools (Cmd+Option+I on Mac) to see it.
 console.log('%cMiki Studio — portfolio v1 👋', 'color:#ff6a3d;font-weight:bold;font-size:14px;');
