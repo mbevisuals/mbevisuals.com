@@ -471,7 +471,7 @@ h1 {
 .cookie-banner.hidden { display: none; }
 .cookie-actions { display: flex; gap: 10px; flex-shrink: 0; }
 .cookie-actions .btn { padding: 8px 18px; font-size: 13px; }
-.cookie-actions .btn-ghost { color: var(--text); border-color: rgba(255,255,255,0.35); }
+.cookie-actions .btn-ghost { color: #ffffff; border-color: rgba(255,255,255,0.9); background: rgba(255,255,255,0.12); }
 
 @media (max-width: 560px) {
   .cookie-banner { flex-direction: column; gap: 14px; text-align: center; }
