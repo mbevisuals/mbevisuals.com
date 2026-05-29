@@ -137,7 +137,7 @@ h1 {
 .btn-primary:hover { transform: translateY(-2px); filter: brightness(1.1); color: #fff; }
 .btn-ghost { border-color: var(--border); color: var(--text); }
 .btn-ghost:hover { border-color: var(--text); color: var(--text); }
-.btn-large { padding: 18px 40px; font-size: 17px; }
+.btn-large { padding: 14px 28px; font-size: 15px; }
 
 /* ---- 6. Generic section ---- */
 .section { padding: 120px 40px; }
@@ -480,8 +480,9 @@ h1 {
 }
 .contact h2 { font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 20px; }
 .contact p  { color: var(--muted); margin-bottom: 40px; }
-.socials { margin-top: 40px; display: flex; gap: 28px; justify-content: center; }
-.socials a { color: var(--muted); }
+.socials { margin-top: 24px; display: flex; gap: 28px; justify-content: center; }
+.socials a { color: var(--text); border: 1px solid rgba(255,255,255,0.4); border-radius: 999px; padding: 10px 24px; font-size: 14px; font-weight: 600; transition: var(--transition); }
+.socials a:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ---- 13. Footer ---- */
 .footer {
